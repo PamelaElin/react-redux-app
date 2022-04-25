@@ -14,12 +14,12 @@ const UserList = () => {
         <div className='row'>
 {
 users.map((user)=>(
-    <div key={user.id} className='col-md-3'>
-        <div className='card mb-2'>
+    <div key={user.id} className='col-3 '>
+        <div className='card mb-2 bg-secondary border border-info p-1' style={{width: '16rem', height:'23rem'}}>
             <img src={user.avatar} alt='avatar'/>
-            <div className='card-body'>
-                <h5 className='card-title'>{`${user.first_name}${user.last_name}`}</h5>
-                <p className='card-text'>{user.email}</p>
+            <div className='card-body  '>
+                <h5 className='card-title  text-light  '> User: {`${user.first_name}${user.last_name}`}</h5>
+                <p className='card-text  text-light '> Email: {user.email}</p>
             </div>
         </div>
     </div>
